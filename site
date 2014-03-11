@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+ <title>ОРХІДЕЇ</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Описание страницы." />
+  <meta name="keywords" content="ключевые слова страницы" />
+  <link href="my site/blok.css" rel="stylesheet" type="text/css" />
+
+
+</HEAD>
+<BODY text = "black" bgcolor = "pink">
+ <div id="header">Шапка сайта</div>
+  <div id="content">
+    <div id="left">Левые блоки</div>
+    <div id="right">Правые блоки</div>
+    <div id="center">Центральная часть</div>
+  </div>
+  <div class="clear"></div>
+  <div id="footer">Содержимое подвала</div>
+
+
+</BODY>
+</HTML>
