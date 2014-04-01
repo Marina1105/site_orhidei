@@ -1,0 +1,7 @@
+Сайт: www.orhidei.esy.es
+
+     FTP:
+PI: 31.220.16.17
+Port: 21
+Login: u926592520
+Pass: ok20tezDQ1

@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Головна</title>
+<link href="ico.ico" rel="shortcut icon">
+<style type="text/css">
+div#container
+{
+   width: 952px;
+   position: relative;
+   margin-top: 0px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+body
+{
+   font-size: 8px;
+   line-height: 1.1875;
+   text-align: center;
+   margin: 0;
+   background-color: #FFFFFF;
+   color: #000000;
+}
+</style>
+<style type="text/css">
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+</style>
+<style type="text/css">
+#Image1
+{
+   border: 0px #000000 solid;
+}
+#NavigationBar1 ul.navbar
+{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   filter: alpha(opacity=90);
+   -moz-opacity: 0.90;
+   opacity: 0.90;
+}
+#NavigationBar1 ul.navbar li
+{
+   height: 25px;
+   width: 140px;
+   margin: 0px 0px 9px 0px;
+   vertical-align: bottom;
+}
+#NavigationBar1 ul.navbar li a
+{
+   display: block;
+   position: relative;
+}
+#NavigationBar1 ul.navbar li a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0px;
+}
+#NavigationBar1 ul.navbar li span
+{
+   display: block;
+   height: 25px;
+   width: 140px;
+   position: absolute;
+   z-index: 2;
+}
+#SlideShow1 .image
+{
+   border-width: 0;
+   left: 0;
+   top: 0;
+}
+#Image2
+{
+   border: 0px #000000 solid;
+}
+</style>
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="jquery.2dtransform.js"></script>
+<script type="text/javascript" src="jquery.ui.effect.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-blind.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-bounce.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-clip.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-drop.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-fade.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-fold.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-scale.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-slide.min.js"></script>
+<script type="text/javascript" src="wb.slideshow.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+   $("#NavigationBar1 .navbar a").hover(function()
+   {
+      $(this).children("span").stop().fadeTo(500, 0);
+   }, function()
+   {
+      $(this).children("span").stop().fadeTo(500, 1);
+   })
+   $("#SlideShow1").slideshow(
+   {
+      interval: 3000,
+      type: 'sequence',
+      effect: 'shuffle',
+      direction: '',
+      effectlength: 1000
+   });
+});
+</script>
+</head>
+<body>
+<div id="container">
+<div id="wb_Image1" style="position:absolute;left:0px;top:0px;width:952px;height:320px;z-index:0;">
+<img src="images/Head%20%281%29.png" id="Image1" alt="" style="width:952px;height:320px;"></div>
+<div id="NavigationBar1" style="position:absolute;left:115px;top:9px;width:140px;height:102px;z-index:1;">
+<ul class="navbar">
+<li><a href="./index.html"><img alt="" src="images/img0001_over.gif"><span><img alt="" src="images/img0001.gif"></span></a></li>
+<li><a href="./histori.html"><img alt="" src="images/img0002_over.gif"><span><img alt="" src="images/img0002.gif"></span></a></li>
+<li><a href="./orhidei.html"><img alt="" src="images/img0003_over.gif"><span><img alt="" src="images/img0003.gif"></span></a></li>
+</ul>
+</div>
+<div id="SlideShow1" style="position:absolute;left:236px;top:323px;width:480px;height:360px;z-index:2;">
+<img class="image" style="width:480px;height:360px;" src="images/images.jpg" alt="" title="">
+<img class="image" style="width:480px;height:360px;display:none;" src="images/images1.jpg" alt="" title="">
+<img class="image" style="width:480px;height:360px;display:none;" src="images/images2.jpg" alt="" title="">
+<img class="image" style="width:480px;height:360px;display:none;" src="images/images3.jpg" alt="" title="">
+<img class="image" style="width:480px;height:360px;display:none;" src="images/images4.jpg" alt="" title="">
+<img class="image" style="width:480px;height:360px;display:none;" src="images/images5.jpg" alt="" title="">
+<img class="image" style="width:480px;height:360px;display:none;" src="images/index.jpg" alt="" title="">
+<img class="image" style="width:480px;height:360px;display:none;" src="images/index1.jpg" alt="" title="">
+</div>
+<div id="wb_Image2" style="position:absolute;left:345px;top:180px;width:262px;height:116px;z-index:3;">
+<img src="images/poit.png" id="Image2" alt="" style="width:262px;height:116px;"></div>
+</div>
+</body>
+</html>
